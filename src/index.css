@@ -55,6 +55,10 @@ section.hero {
 	width: 100vw;
 }
 
+.content-box {
+	@apply container px-5 mx-auto;
+}
+
 .intro {
 	@apply flex flex-col justify-around h-screen items-center text-center text-5xl md:text-6xl;
 }
@@ -68,5 +72,21 @@ section.hero {
 }
 
 .btn--small {
-	@apply uppercase text-lg font-semibold border-2 border-white px-3 py-2 hover:bg-white hover:text-black transform transition-colors ease-in-out duration-500;
+	@apply uppercase font-semibold border-2 border-white px-3 py-2 hover:bg-white hover:text-black transform transition-colors ease-in-out duration-500;
+}
+
+.text-block {
+	@apply h-full lg:h-screen flex items-center;
+}
+
+.text-block--container {
+	@apply container px-5 my-32 lg:my-0 md:mx-auto w-auto;
+}
+
+.text-block--body {
+	@apply text-4xl tracking-wide leading-tight md:leading-tight md:text-5xl text-gray-400;
+}
+
+.clip {
+	clip-path: polygon(0% 0%, 50% 35%, 100% 0, 100% 100%, 0% 100%);
 }
