@@ -1,0 +1,21 @@
+{
+  "workbench.colorCustomizations": {
+    "titleBar.activeForeground": "#ffffff",
+    "titleBar.inactiveForeground": "#000000cc",
+    "titleBar.activeBackground": "#336de1",
+    "titleBar.inactiveBackground": "#154cbb",
+    "editor.renderWhitespace": "none",
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": false,
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "eslint.packageManager": "yarn",
+    "eslint.autoFixOnSave": true,
+    "prettier.singleQuote": true,
+    "prettier.printWidth": 100,
+    "prettier.useTabs": true,
+    "prettier.tabWidth": 2,
+    "prettier.eslintIntegration": true,
+    "prettier.stylelintIntegration": true
+  }
+}

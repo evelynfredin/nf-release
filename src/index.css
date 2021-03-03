@@ -1,13 +1,72 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'Maven Pro';
+	src: url('./assets/fonts/MavenPro-Bold.woff2') format('woff2'),
+		url('./assets/fonts/MavenPro-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+	font-family: 'Maven Pro';
+	src: url('./assets/fonts/MavenPro-SemiBold.woff2') format('woff2'),
+		url('./assets/fonts/MavenPro-SemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Maven Pro';
+	src: url('./assets/fonts/MavenPro-Regular.woff2') format('woff2'),
+		url('./assets/fonts/MavenPro-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@apply uppercase font-bold text-white;
+}
+
+body {
+	@apply text-gray-600 bg-black;
+}
+
+/***************************************************************
+  Hero Section
+***************************************************************/
+
+section.hero {
+	background-image: linear-gradient(0deg, #ffffff86 30%, #00000088 100%),
+		url(./assets/images/heroxl.jpg);
+	background-size: cover;
+	background-position: top;
+	height: 100vh;
+	width: 100vw;
+}
+
+.intro {
+	@apply flex flex-col justify-around h-screen items-center text-center text-5xl md:text-6xl;
+}
+
+.btn {
+	@apply py-3 px-2 md:py-4 md:px-3 uppercase text-xl md:text-3xl font-bold w-48 md:w-56 mx-auto items-center shadow-xl transform transition-colors ease-in-out duration-500;
+}
+
+.btn--big {
+	@apply border-2 border-black text-black hover:bg-black hover:text-white hover:shadow-sm;
+}
+
+.btn--small {
+	@apply uppercase text-lg font-semibold border-2 border-white px-3 py-2 hover:bg-white hover:text-black transform transition-colors ease-in-out duration-500;
 }
