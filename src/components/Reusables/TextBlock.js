@@ -1,12 +1,17 @@
 import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const TextBlock = props => {
+    const [ref, inView] = useInView({
+        triggerOnce: true,
+        rootMargin: '-100px 0px',
+    });
+
     return (
-        <motion.div className="text-block"
-            initial={{ y: 250, opacity: 0}}
-            animate={{ y: -10, opacity: 1}}
-            transition={{ delay: 0.5, duration: 1, type: 'spring', stiffness: 120 }}
+        <motion.div ref={ref} className="text-block"
+            animate={{ y: inView ? -10 : 50, opacity: inView ? 1 : 0}}
+            transition={{ delay: 0.2, duration: 1}}
         >
             <div className="text-block--container">
                 <div className="md:px-10 lg:px-0">

@@ -1,20 +1,24 @@
 import TextBlock from './Reusables/TextBlock';
 import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const Event = () => {
+    const [ref, inView] = useInView({
+        triggerOnce: true,
+        rootMargin: '-100px 0px',
+    });
+
     return (
         <section className="content-box lg:grid lg:grid-cols-2">
 
             <TextBlock
-                title="Clouds"
                 subtitle="(The Launch Night)"
                 body="Join NF and some fantastic guests for a night of great music and fun where CLOUDS will be performed in its entirety for the first time ever!"
             />
 
-            <motion.div className="flex flex-col justify-center mx-10 h-auto"
-                initial={{ x: 250, opacity: 0}}
-                animate={{ x: -10, opacity: 1}}
-                transition={{ delay: 0.5, duration: 1, type: 'spring', stiffness: 120 }}
+            <motion.div ref={ref} className="flex flex-col justify-center mx-10 h-auto"
+                animate={{ x: inView ? -10 : 50, opacity: inView ? 1 : 0 }}
+                transition={{ delay: 0.2, duration: 1 }}
             >
                 <div className="bg-gray-800 self-center">
                     <div className="bg-gray-900 p-10 pt-36 md:p-20 md:pt-52 clip">
