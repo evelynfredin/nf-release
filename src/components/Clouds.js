@@ -1,5 +1,5 @@
 import { motion, useViewportScroll, useTransform } from "framer-motion"
-import Stripe from '../assets/images/strip.svg'
+import Stripe from '../assets/images/stripe.svg'
 
 const Clouds = () => {
     const { scrollYProgress } = useViewportScroll();
