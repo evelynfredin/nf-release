@@ -8,7 +8,7 @@ const Intro = () => {
             <motion.h1
                 initial={{ y: -250}}
                 animate={{ y: -10 }}
-                transition={{ delay: 0.5, duration: 1, type: 'spring', stiffness: 120 }}
+                transition={{ delay: 0.5, duration: 1 }}
             >
                 <span className="block text-2xl md:text-3xl">March 25th</span>
                 Clouds

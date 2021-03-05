@@ -1,9 +1,7 @@
 import { motion } from 'framer-motion';
 
 const svgVariants = {
-    hidden: { scale: 0 },
     visible: {
-      scale: 1.2,
       transition: { duration: 2},
     },
 };
