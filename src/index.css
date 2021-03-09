@@ -39,7 +39,7 @@ h6 {
 }
 
 body {
-	@apply text-gray-600 bg-black;
+	@apply text-gray-600 bg-black overflow-x-hidden;
 }
 
 /***************************************************************
@@ -55,7 +55,7 @@ section.hero {
 	width: 100vw;
 }
 
-.content-box {
+.wrapper {
 	@apply container px-5 mx-auto;
 }
 
@@ -75,12 +75,16 @@ section.hero {
 	@apply uppercase font-semibold border-2 border-white px-3 py-2 hover:bg-white hover:text-black transform transition-colors ease-in-out duration-500;
 }
 
+.btn--bigger {
+	@apply border-2 bg-white text-black hover:bg-black hover:text-white hover:shadow-sm mt-10;
+}
+
 .text-block {
-	@apply h-full lg:h-screen flex items-center;
+	@apply h-auto flex items-center my-20 lg:my-0;
 }
 
 .text-block--container {
-	@apply container px-5 my-32 lg:my-0 md:mx-auto w-auto;
+	@apply container px-5 md:px-0 my-32 md:my-0 lg:my-0 md:mx-auto w-auto;
 }
 
 .text-block--body {
@@ -89,4 +93,8 @@ section.hero {
 
 .clip {
 	clip-path: polygon(0% 0%, 50% 35%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.img {
+	@apply w-full h-full object-contain;
 }

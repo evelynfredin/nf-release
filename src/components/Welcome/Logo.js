@@ -1,8 +1,10 @@
 import { motion } from 'framer-motion';
 
 const svgVariants = {
+    hidden: { opacity: 0 },
     visible: {
-      transition: { duration: 2},
+        opacity: 1,
+        transition: { duration: 2, delay: .8},
     },
 };
 

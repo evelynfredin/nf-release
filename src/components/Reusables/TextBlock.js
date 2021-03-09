@@ -16,7 +16,7 @@ const TextBlock = props => {
             <div className="text-block--container">
                 <div className="md:px-10 lg:px-0">
                     <h2 className="uppercase font-bold text-5xl md:text-8xl mb-10">{props.title}<span className="block text-4xl md:text-6xl">{props.subtitle}</span></h2>
-                    <p className="text-block--body">{props.body}</p>
+                    {props.children}
                 </div>
             </div>
         </motion.div>
@@ -26,7 +26,6 @@ const TextBlock = props => {
 TextBlock.propTypes = {
     title: PropTypes.string,
     subtitle: PropTypes.string,
-    body: PropTypes.string
 }
 
 export default TextBlock

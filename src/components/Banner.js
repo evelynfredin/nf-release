@@ -1,9 +1,8 @@
-import TextBlock from './Reusables/TextBlock';
-import AlbumCover from '../assets/images/clouds-cover.jpg'
+import Bannerlg from '../assets/images/nf-promo.jpg';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 
-const Album = () => {
+const Banner = () => {
     const [ref, inView] = useInView({
         triggerOnce: true,
         rootMargin: '-100px 0px',
@@ -11,9 +10,10 @@ const Album = () => {
 
     return (
         <section className="wrapper flex flex-col h-screen lg:flex-row justify-center items-center">
+            <div className="w-full"></div>
             <div className="lg:mr-10">
-                <motion.img src={AlbumCover}
-                    alt="Clouds album cover"
+                <motion.img src={Bannerlg}
+                    alt="NF standing in the dark"
                     loading="lazy"
                     ref={ref}
                     animate={{
@@ -24,13 +24,8 @@ const Album = () => {
                     transition={{ delay: 0.2, duration: 1}}
                 />
             </div>
-
-            <TextBlock title="Clouds" subtitle="(The Mixtape)">
-                <p className="text-block--body"><span className="text-white font-bold uppercase">Clouds</span> drops March 26. Preorder now!</p>
-            </TextBlock>
-
         </section>
     )
 }
 
-export default Album
+export default Banner
