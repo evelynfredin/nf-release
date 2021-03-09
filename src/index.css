@@ -47,8 +47,8 @@ body {
 ***************************************************************/
 
 section.hero {
-	background-image: linear-gradient(0deg, #ffffff86 30%, #00000088 100%),
-		url(./assets/images/heroxl.jpg);
+	background-image: linear-gradient(0deg, #ffffff86 30%, #00000098 100%),
+		url(./assets/images/hero.jpeg);
 	background-size: cover;
 	background-position: top;
 	height: 100vh;
@@ -91,10 +91,13 @@ section.hero {
 	@apply text-4xl tracking-wide leading-tight md:leading-tight md:text-5xl text-gray-400;
 }
 
-.clip {
-	clip-path: polygon(0% 0%, 50% 35%, 100% 0, 100% 100%, 0% 100%);
-}
-
 .img {
 	@apply w-full h-full object-contain;
+}
+
+@media (max-width: 640px) {
+	section.hero {
+		background-image: linear-gradient(0deg, #ffffff86 30%, #000000b0 100%),
+			url(./assets/images/herosm.jpeg);
+	}
 }

@@ -1,4 +1,3 @@
-import Bannerlg from '../assets/images/nf-promo.jpg';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 
@@ -8,11 +7,15 @@ const Banner = () => {
         rootMargin: '-100px 0px',
     });
 
+    const small = 'https://accelerated.atoms.crystallize.digital/snowball/images/PalmaSpeedJusterteBilder-15/_resized_300.jpg';
+const large = 'https://accelerated.atoms.crystallize.digital/snowball/images/PalmaSpeedJusterteBilder-15/_resized_1280.jpg';
+
+
     return (
         <section className="wrapper flex flex-col h-screen lg:flex-row justify-center items-center">
-            <div className="w-full"></div>
             <div className="lg:mr-10">
-                <motion.img src={Bannerlg}
+                <motion.img src={small}
+                    srcSet={`${small} 768w, ${large} 1280w`}
                     alt="NF standing in the dark"
                     loading="lazy"
                     ref={ref}

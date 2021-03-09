@@ -1,5 +1,5 @@
 import TextBlock from './Reusables/TextBlock';
-import AlbumCover from '../assets/images/clouds-cover.jpg'
+import AlbumCover from '../assets/images/clouds-cover.jpeg'
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 

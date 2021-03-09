@@ -7,7 +7,6 @@ const Intro = () => {
     const name = new URLSearchParams(search).get('name');
     const location = new URLSearchParams(search).get('location');
 
-
     return (
 
         <div className="intro">
@@ -25,7 +24,7 @@ const Intro = () => {
             <Logo />
             <Button
                 btnStyle="btn btn--big"
-                btnText={name ? 'RSVP' : 'Tickets'}
+                btnText={location ? 'RSVP' : 'Tickets'}
             />
         </div>
     )

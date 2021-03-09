@@ -1,6 +1,10 @@
 import Button from './Reusables/Button';
 
 const Navbar = () => {
+
+    const search = window.location.search;
+    const location = new URLSearchParams(search).get('location');
+
     return (
         <header className="sticky top-0 py-4 bg-black border-b text-white z-50 bg-opacity-95">
             <nav className="wrapper flex justify-between h-auto items-center">
@@ -9,7 +13,7 @@ const Navbar = () => {
                 </div>
                 <Button
                     btnStyle="btn--small"
-                    btnText="Tickets"
+                    btnText={location ? 'RSVP' : 'Tickets'}
                 />
             </nav>
         </header>

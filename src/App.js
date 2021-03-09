@@ -3,7 +3,6 @@ import Navbar from './components/Navbar';
 import Event from './components/Event';
 import Album from './components/Album';
 import Footer from './components/Footer';
-import Banner from './components/Banner';
 
 function App() {
   return (
@@ -12,7 +11,6 @@ function App() {
         <Navbar />
         <Event />
         <Album />
-        <Banner />
         <Footer />
     </div>
   );

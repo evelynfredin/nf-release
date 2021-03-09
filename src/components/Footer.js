@@ -3,10 +3,14 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 const Footer = () => {
+
     const [ref, inView] = useInView({
         triggerOnce: true,
         rootMargin: '-100px 0px',
     });
+
+    const search = window.location.search;
+    const location = new URLSearchParams(search).get('location');
 
     return (
         <section className="w-screen h-screen items-center flex flex-col justify-center my-33">
@@ -19,7 +23,7 @@ const Footer = () => {
             </motion.p>
             <Button
                 btnStyle="btn btn--bigger"
-                btnText="Tickets"
+                btnText={location ? 'RSVP' : 'Tickets'}
             />
         </section>
     )
