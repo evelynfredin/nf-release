@@ -18,7 +18,7 @@ const Footer = () => {
                 ref={ref}
                 animate={{ y: inView ? 30 : 100, opacity: inView ? 1 : 0}}
                 transition={{ delay: 0.3, duration: 1}}
-                className="text-white text-4xl lg:text-8xl font-bold my-10">
+                className="text-white text-4xl md:text-6xl lg:text-8xl font-bold my-10">
                     I'll be there
             </motion.p>
             <Button

@@ -14,10 +14,10 @@ const Intro = () => {
             <motion.h1
                 initial={{ y: -250}}
                 animate={{ y: -10 }}
-                transition={{ delay: 0.5, duration: 1 }}
+                transition={{ delay: 0.3, duration: 1 }}
             >
                 <span className="block text-2xl md:text-3xl">{name ? 'Hi ' + name + '!': '' }</span>
-                <span className="block text-lg md:text-2xl">Join us to celebrate</span>
+                <span className="block text-lg md:text-2xl">Celebrate with me</span>
                 Clouds
                 <span className="block text-lg md:text-2xl">{location ? '(The Launch Night)' : '(The Livestream)'}</span>
             </motion.h1>

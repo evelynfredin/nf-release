@@ -8,7 +8,7 @@ const Clouds = () => {
     const xPosAnim2 = useTransform(scrollYProgress, [0, 0.4, 1], [100, -280, 50]);
 
     return (
-        <div className="h-screen lg:h-1/2 lg:mt-20 lg:mb-32 flex flex-col justify-center">
+        <div className="h-auto py-32 my-16 flex flex-col justify-center">
             <div className="flex h-auto justify-center items-center">
                 <h2 className="uppercase text-3xl md:text-6xl lg:text-7xl text-center z-40">Clouds (The Mixtape)</h2>
             </div>

@@ -42,11 +42,7 @@ body {
 	@apply text-gray-600 bg-black overflow-x-hidden;
 }
 
-/***************************************************************
-  Hero Section
-***************************************************************/
-
-section.hero {
+.hero {
 	background-image: linear-gradient(0deg, #ffffff86 30%, #00000098 100%),
 		url(./assets/images/hero.jpeg);
 	background-size: cover;
@@ -80,19 +76,19 @@ section.hero {
 }
 
 .text-block {
-	@apply h-auto flex items-center my-20 lg:my-0;
+	@apply h-auto flex items-center;
 }
 
 .text-block--container {
-	@apply container px-5 md:px-0 my-32 md:my-0 lg:my-0 md:mx-auto w-auto;
+	@apply container px-5 md:px-0 md:my-0 lg:my-0 md:mx-auto w-auto;
 }
 
 .text-block--body {
-	@apply text-4xl tracking-wide leading-tight md:leading-tight md:text-5xl text-gray-400;
+	@apply text-3xl tracking-wide leading-tight md:leading-tight md:text-4xl text-gray-400;
 }
 
 .img {
-	@apply w-full h-full object-contain;
+	@apply w-full h-auto object-fill;
 }
 
 @media (max-width: 640px) {
