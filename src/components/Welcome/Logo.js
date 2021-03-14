@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion, useViewportScroll, useTransform } from "framer-motion";
 
 const svgVariants = {
     hidden: { opacity: 0 },
@@ -9,12 +9,17 @@ const svgVariants = {
 };
 
 const Logo = () => {
+    const { scrollYProgress } = useViewportScroll();
+    const Anim = useTransform(scrollYProgress, [0, 0.4, 1], [0, -280, 50]);
+
     return (
         <div className="my-8">
             <motion.svg width="149" height="101" fill="#000" xmlns="http://www.w3.org/2000/svg"
                 variants={svgVariants}
                 initial="hidden"
                 animate="visible"
+                style={{
+                    y: Anim}}
             >
                 <motion.path
                     fill="#000"

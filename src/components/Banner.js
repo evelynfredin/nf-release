@@ -1,6 +1,7 @@
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 
+
 const Banner = () => {
     const [ref, inView] = useInView({
         triggerOnce: true,
@@ -8,7 +9,7 @@ const Banner = () => {
     });
 
     const small = 'https://accelerated.atoms.crystallize.digital/snowball/images/PalmaSpeedJusterteBilder-15/_resized_300.jpg';
-const large = 'https://accelerated.atoms.crystallize.digital/snowball/images/PalmaSpeedJusterteBilder-15/_resized_1280.jpg';
+const large = 'https://nrtest.noisereactor.com/wp-content/uploads/2021/03/sGPPUR7b2A1L3ag85449brFOjYFEdiJlfGFS0rTq.jpeg';
 
 
     return (

@@ -43,8 +43,8 @@ body {
 }
 
 .hero {
-	background-image: linear-gradient(0deg, #ffffff86 30%, #00000098 100%),
-		url(./assets/images/hero.jpeg);
+	background-image: linear-gradient(0deg, #ffffff86 30%, #00000098 80%),
+		url(./assets/images/herosm.jpeg);
 	background-size: cover;
 	background-position: top;
 	height: 100vh;
@@ -64,15 +64,15 @@ body {
 }
 
 .btn--big {
-	@apply border-2 border-black text-black hover:bg-black hover:text-white hover:shadow-sm;
+	@apply border-2 border-black text-black hover:bg-black hover:text-white hover:shadow-sm focus:bg-black focus:text-white focus:shadow-sm;
 }
 
 .btn--small {
-	@apply uppercase font-semibold border-2 border-white px-3 py-2 hover:bg-white hover:text-black transform transition-colors ease-in-out duration-500;
+	@apply uppercase font-semibold border-2 border-white px-3 py-2 hover:bg-white hover:text-black focus:bg-white focus:text-black transform transition-colors ease-in-out duration-500;
 }
 
 .btn--bigger {
-	@apply border-2 bg-white text-black hover:bg-black hover:text-white hover:shadow-sm mt-10;
+	@apply border-2 bg-white text-black hover:bg-black hover:text-white hover:shadow-sm focus:bg-black focus:text-white focus:shadow-sm mt-10;
 }
 
 .text-block {
@@ -91,9 +91,9 @@ body {
 	@apply w-full h-auto object-fill;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
 	section.hero {
-		background-image: linear-gradient(0deg, #ffffff86 30%, #000000b0 100%),
-			url(./assets/images/herosm.jpeg);
+		background-image: linear-gradient(0deg, #ffffff86 30%, #000000b0 80%),
+			url(./assets/images/hero.jpeg);
 	}
 }

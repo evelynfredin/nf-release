@@ -1,9 +1,9 @@
-import { motion, useViewportScroll, useTransform } from "framer-motion"
+import { motion, useViewportScroll, useTransform } from "framer-motion";
 
 const Clouds = () => {
     const { scrollYProgress } = useViewportScroll();
-    const yPosAnim = useTransform(scrollYProgress, [0, 0.4, 1], [300, -50, -200]);
-    const yPosAnim2 = useTransform(scrollYProgress, [0, 0.4, 1], [300, -50, -250]);
+    const yPosAnim = useTransform(scrollYProgress, [0, 0.4, 1], [300, -150, -200]);
+    const yPosAnim2 = useTransform(scrollYProgress, [0, 0.4, 1], [300, 150, -250]);
     const xPosAnim = useTransform(scrollYProgress, [0, 0.4, 1], [200, -150, 50]);
     const xPosAnim2 = useTransform(scrollYProgress, [0, 0.4, 1], [100, -280, 50]);
 

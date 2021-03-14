@@ -13,7 +13,7 @@ const Footer = () => {
     const location = new URLSearchParams(search).get('location');
 
     return (
-        <section className="w-screen h-screen items-center flex flex-col justify-center my-33">
+        <section className="w-screen h-screen items-center flex flex-col justify-center my-33 relative">
             <motion.p
                 ref={ref}
                 animate={{ y: inView ? 30 : 100, opacity: inView ? 1 : 0}}
@@ -24,7 +24,9 @@ const Footer = () => {
             <Button
                 btnStyle="btn btn--bigger"
                 btnText={location ? 'RSVP' : 'Tickets'}
+                btnAnim={''}
             />
+            <p className="m-10 text-center bottom-1 absolute">Disclaimer: This is a fake event. The website is a school project and NF has no affiliation to it.</p>
         </section>
     )
 }
