@@ -2,6 +2,7 @@ import Button from './Reusables/Button';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
+import GetParams from './Reusables/GetParams';
 
 const Footer = () => {
 
@@ -9,10 +10,6 @@ const Footer = () => {
         triggerOnce: true,
         rootMargin: '-100px 0px',
     });
-
-    const search = window.location.search;
-    const name = new URLSearchParams(search).get('name');
-    const location = new URLSearchParams(search).get('location');
 
     return (
         <section className="w-screen h-screen items-center flex flex-col justify-center my-33 relative">
@@ -23,10 +20,10 @@ const Footer = () => {
                 className="text-white text-4xl md:text-6xl lg:text-8xl font-bold my-10">
                     I'll be there
             </motion.p>
-            <Link to={name && location ? '/rsvp' : '/'}>
+            <Link to={ GetParams.isLocationSet() ? '/rsvp' : '' }>
                 <Button
                     btnStyle="btn btn--bigger"
-                    btnText={location ? 'RSVP' : 'Tickets'}
+                    btnText={GetParams.isNameSet() && GetParams.isLocationSet() ? 'RSVP' : 'Tickets'}
                 />
             </Link>
             <div className="my-10 bottom-0 px-10 absolute">

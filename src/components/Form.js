@@ -29,11 +29,11 @@ const Form = () => {
                 </div>
                 <div className="lg:flex-row justify-between">
                     <div className="h-auto flex-row justify-center items-center p-0 focus-within:bg-transparent">
-                        <input type="radio" id="confirmed" name="rsvp" value="confirmed" />
+                        <input type="radio" id="confirmed" name="rsvp" value="confirmed" required />
                         <label className="cursor-pointer" htmlFor="confirmed">I will be there</label>
                     </div>
                     <div className="h-auto flex-row justify-center items-center p-0 focus-within:bg-transparent">
-                        <input type="radio" id="declined" name="rsvp" value="declined" />
+                        <input type="radio" id="declined" name="rsvp" value="declined" required />
                         <label className="cursor-pointer" htmlFor="declined">I can't make it</label>
                     </div>
                 </div>
