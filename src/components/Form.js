@@ -1,4 +1,5 @@
 import Button from './Reusables/Button';
+import { motion } from 'framer-motion';
 
 const Form = () => {
 
@@ -7,7 +8,11 @@ const Form = () => {
     };
 
     return (
-        <section className="flex flex-col justify-center h-screen items-center">
+        <motion.section className="flex flex-col justify-center h-screen items-center"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ ease: "easeIn", duration: 1 }}
+        >
             <p className="text-xl">RSVP to save your spot!</p>
             <form onSubmit={handleSubmit}>
                 <div>
@@ -37,7 +42,7 @@ const Form = () => {
                     btnStyle="btn--small"
                 />
             </form>
-        </section>
+        </motion.section>
     )
 }
 

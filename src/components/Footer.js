@@ -11,6 +11,7 @@ const Footer = () => {
     });
 
     const search = window.location.search;
+    const name = new URLSearchParams(search).get('name');
     const location = new URLSearchParams(search).get('location');
 
     return (
@@ -22,7 +23,7 @@ const Footer = () => {
                 className="text-white text-4xl md:text-6xl lg:text-8xl font-bold my-10">
                     I'll be there
             </motion.p>
-            <Link to="/rsvp">
+            <Link to={name && location ? '/rsvp' : '/'}>
                 <Button
                     btnStyle="btn btn--bigger"
                     btnText={location ? 'RSVP' : 'Tickets'}
