@@ -5,6 +5,7 @@ import Album from './components/Album';
 import Clouds from './components/Clouds';
 import Footer from './components/Footer';
 import Form from './components/Form';
+
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {

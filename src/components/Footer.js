@@ -24,6 +24,7 @@ const Footer = () => {
                 <Button
                     btnStyle="btn btn--bigger"
                     btnText={GetParams.isNameSet() && GetParams.isLocationSet() ? 'RSVP' : 'Tickets'}
+                    btnAnim={null}
                 />
             </Link>
             <div className="my-10 bottom-0 px-10 absolute">

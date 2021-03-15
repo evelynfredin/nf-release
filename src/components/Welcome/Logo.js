@@ -9,8 +9,8 @@ const svgVariants = {
 };
 
 const Logo = () => {
-    const { scrollYProgress } = useViewportScroll();
-    const Anim = useTransform(scrollYProgress, [0, 0.4, 1], [0, -280, 50]);
+    const { scrollY } = useViewportScroll();
+    const anim = useTransform(scrollY, [0, 300], [0, -100]);
 
     return (
         <div className="my-8">
@@ -19,7 +19,7 @@ const Logo = () => {
                 initial="hidden"
                 animate="visible"
                 style={{
-                y: Anim}}
+                    y: anim }}
             >
                 <motion.path
                     fill="#000"
