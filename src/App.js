@@ -5,18 +5,27 @@ import Album from './components/Album';
 import Clouds from './components/Clouds';
 import Footer from './components/Footer';
 import Form from './components/Form';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="font-body">
-        <Hero />
-        <Navbar />
-        <Event />
-        <Clouds />
-        <Album />
-        <Form />
-        <Footer />
-    </div>
+    <Router>
+        <div className="font-body">
+            <Hero />
+            <Navbar />
+            <Event />
+            <Clouds />
+            <Album />
+            <Switch>
+                <Route exact path="/">
+                    <Footer />
+                </Route>
+                <Route path="/rsvp">
+                    <Form />
+                </Route>
+            </Switch>
+        </div>
+    </Router>
   );
 }
 

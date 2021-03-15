@@ -1,6 +1,7 @@
 import Button from './Reusables/Button';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
 
@@ -21,10 +22,12 @@ const Footer = () => {
                 className="text-white text-4xl md:text-6xl lg:text-8xl font-bold my-10">
                     I'll be there
             </motion.p>
-            <Button
-                btnStyle="btn btn--bigger"
-                btnText={location ? 'RSVP' : 'Tickets'}
-            />
+            <Link to="/rsvp">
+                <Button
+                    btnStyle="btn btn--bigger"
+                    btnText={location ? 'RSVP' : 'Tickets'}
+                />
+            </Link>
             <div className="my-10 bottom-0 px-10 absolute">
                 <p className="text-center">Disclaimer: This is a fake event. This website is a school project and NF has no affiliation to it.</p>
             </div>
