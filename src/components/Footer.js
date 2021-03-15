@@ -24,9 +24,10 @@ const Footer = () => {
             <Button
                 btnStyle="btn btn--bigger"
                 btnText={location ? 'RSVP' : 'Tickets'}
-                btnAnim={''}
             />
-            <p className="m-10 text-center bottom-1 absolute">Disclaimer: This is a fake event. The website is a school project and NF has no affiliation to it.</p>
+            <div className="my-10 bottom-0 px-10 absolute">
+                <p className="text-center">Disclaimer: This is a fake event. This website is a school project and NF has no affiliation to it.</p>
+            </div>
         </section>
     )
 }

@@ -12,6 +12,8 @@ module.exports = {
             gray: colors.coolGray,
             black: colors.black,
             white: colors.white,
+            blue: '#1abdf9',
+            transparent: 'transparent',
         },
     },
     variants: {

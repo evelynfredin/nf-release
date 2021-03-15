@@ -46,7 +46,7 @@ const Clouds = () => {
             <motion.svg
                 style={{
                     y: yPosAnim}}
-                className="w-16 h-16 text-gray-600"
+                className="w-20 h-16 text-gray-600"
                 viewBox="0 0 80 54"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg">

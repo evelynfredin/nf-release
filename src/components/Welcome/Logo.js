@@ -19,7 +19,7 @@ const Logo = () => {
                 initial="hidden"
                 animate="visible"
                 style={{
-                    y: Anim}}
+                y: Anim}}
             >
                 <motion.path
                     fill="#000"

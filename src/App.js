@@ -4,6 +4,7 @@ import Event from './components/Event';
 import Album from './components/Album';
 import Clouds from './components/Clouds';
 import Footer from './components/Footer';
+import Form from './components/Form';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Event />
         <Clouds />
         <Album />
+        <Form />
         <Footer />
     </div>
   );
