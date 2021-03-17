@@ -1,11 +1,16 @@
 import Button from './Reusables/Button';
 import { motion } from 'framer-motion';
+import GetParams from './Reusables/GetParams';
 
 const Form = () => {
 
     const handleSubmit = event => {
         event.preventDefault();
     };
+
+    const name = GetParams.isNameSet();
+
+    console.log(name);
 
     return (
         <motion.section className="flex flex-col justify-center h-screen items-center"
@@ -17,7 +22,7 @@ const Form = () => {
             <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="firstname">First name:</label>
-                    <input type="text" name="firstname" id="firstname" required />
+                    <input type="text" name="firstname" value={name} id="firstname" required />
                 </div>
                 <div>
                     <label htmlFor="lastname">Last name:</label>

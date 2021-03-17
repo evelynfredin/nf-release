@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Event from './components/Event';
 import Album from './components/Album';
 import Clouds from './components/Clouds';
+import Banner from './components/Banner';
 import Footer from './components/Footer';
 import Form from './components/Form';
 
@@ -17,6 +18,7 @@ function App() {
             <Event />
             <Clouds />
             <Album />
+            <Banner />
             <Switch>
                 <Route exact path="/">
                     <Footer />

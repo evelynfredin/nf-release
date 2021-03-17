@@ -27,7 +27,7 @@ const Album = () => {
 
             <div className="flex flex-col h-auto justify-center items-center my-40 lg:my-0">
                 <TextBlock title="Clouds" subtitle="(The Mixtape)">
-                    <p className="text-block--body mb-10"><span className="text-white font-bold">Clouds</span> drops March 26.</p>
+                    <p className="text-block--body mb-10">Out on March 26th.</p>
                 </TextBlock>
                 <iframe title={"Spotify Player"} src="https://open.spotify.com/embed/track/5UMMPHPp6vRP6ghPpSUOzp" width="300" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             </div>
