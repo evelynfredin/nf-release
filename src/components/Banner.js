@@ -10,7 +10,7 @@ const Banner = () => {
     });
 
     return (
-        <section className="wrapper grid lg:grid-cols-2">
+        <section className="wrapper grid lg:grid-cols-2 md:mt-40">
             <div className="z-40 flex order-2 lg:order-1 mx-10 md:mx-20 lg:mx-10 -mt-28 lg:mt-0 flex-col h-auto justify-center items-center mb-40 lg:my-0 bg-gray-700 lg:bg-transparent">
                 <TextBlock>
                     <p className="text-block--body mb-10 text-center lg:text-left">It's been 2 years without new music, it's time for more. Over the years we've kept beating the odds and raising bars, join me to do it yet again.</p>
