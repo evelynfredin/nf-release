@@ -18,3 +18,8 @@ We based our project on the release of NF's upcoming album Clouds (The Mixtape).
 * With parameters: [https://nf-release.vercel.app/?name=Nate&location=true](https://nf-release.vercel.app/?name=Nate&location=true)
 
 ## Code Review
+[Aseel Mohamad](https://github.com/Aseel88)
+- I liked that you build your project using React, it's structured very well.
+- You make me curious to read about a lot of things ex: framer-motion, react-intersection-observer, react-scroll and react-intersection-observer.
+- Very nice animations.
+- Really amazing work!
